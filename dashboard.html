@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Lounge.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">📖</span>
+      <span class="logo-text">Lounge.</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item active" data-page="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+      <a href="qa-forum.html" class="nav-item" data-page="qa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        Q&amp;A Forum
+      </a>
+      <a href="materials.html" class="nav-item" data-page="materials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Materials
+      </a>
+      <a href="tutorials.html" class="nav-item" data-page="tutorials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        Tutorials
+      </a>
+      <a href="discussions.html" class="nav-item" data-page="discussions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Discussions
+      </a>
+      <a href="messages.html" class="nav-item" data-page="messages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Messages
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="avatar">S</div>
+        <div class="user-details">
+          <div class="name">Student</div>
+          <div class="role">Student</div>
+        </div>
+      </div>
+      <a href="index.html" class="sign-out">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Study Dashboard</h1>
+      <p>Welcome back. Here's what's happening in your courses.</p>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">
+          Questions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        </div>
+        <div class="stat-number">4</div>
+        <div class="stat-sub">1 unanswered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">
+          Materials
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div class="stat-number">5</div>
+        <div class="stat-sub">Available to download</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">
+          Tutorials
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        </div>
+        <div class="stat-number">2</div>
+        <div class="stat-sub">Video lessons</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">
+          Discussions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="stat-number">3</div>
+        <div class="stat-sub">Active threads</div>
+      </div>
+    </div>
+
+    <!-- ACTIVITY + QUICK LINKS -->
+    <div class="dashboard-grid">
+      <div class="activity-card">
+        <h3>Recent Activity</h3>
+        <p class="subtitle">The latest updates from your subjects</p>
+
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="activity-body">
+            <div class="activity-text">
+              <strong>Thabo Sithole</strong> New discussion: Tips for the POE assignment - Part 2
+              <span class="activity-time">12 minutes ago</span>
+            </div>
+            <span class="activity-tag" style="background:#e8d8c4;color:#5a3e20;">Human-Computer Interaction</span>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="activity-body">
+            <div class="activity-text">
+              <strong>Lesedi Khumalo</strong> New discussion: Best resources for learning UML diagrams?
+              <span class="activity-time">12 minutes ago</span>
+            </div>
+            <span class="activity-tag" style="background:#d4e6da;color:#2d5a3d;">Software Engineering</span>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="activity-body">
+            <div class="activity-text">
+              <strong>Manubi Thanyani</strong> New discussion: Study group for HCIN6222 mid-semester test
+              <span class="activity-time">12 minutes ago</span>
+            </div>
+            <span class="activity-tag" style="background:#e8d8c4;color:#5a3e20;">Human-Computer Interaction</span>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+          </div>
+          <div class="activity-body">
+            <div class="activity-text">
+              <strong>Prof. James Dlamini</strong> New material: UML Diagrams Reference — PDF
+              <span class="activity-time">1 hour ago</span>
+            </div>
+            <span class="activity-tag" style="background:#d4e6da;color:#2d5a3d;">Software Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="quick-links-card">
+        <h3>Quick Links</h3>
+        <button class="quick-link-btn" onclick="window.location.href='qa-forum.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+          Ask a Question
+        </button>
+        <button class="quick-link-btn" onclick="window.location.href='materials.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Find Materials
+        </button>
+        <button class="quick-link-btn" onclick="window.location.href='messages.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Message Lecturer
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <div class="toast-icon">✓</div>
+  <div>
+    <div class="toast-title">Question posted successfully</div>
+    <div class="toast-body">Your question has been published to the Q&A Forum.</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

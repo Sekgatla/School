@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Materials — Lounge.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">📖</span>
+      <span class="logo-text">Lounge.</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item" data-page="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+      <a href="qa-forum.html" class="nav-item" data-page="qa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        Q&amp;A Forum
+      </a>
+      <a href="materials.html" class="nav-item active" data-page="materials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Materials
+      </a>
+      <a href="tutorials.html" class="nav-item" data-page="tutorials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        Tutorials
+      </a>
+      <a href="discussions.html" class="nav-item" data-page="discussions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Discussions
+      </a>
+      <a href="messages.html" class="nav-item" data-page="messages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Messages
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="avatar">S</div>
+        <div class="user-details">
+          <div class="name">Student</div>
+          <div class="role">Student</div>
+        </div>
+      </div>
+      <a href="index.html" class="sign-out">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Study Materials</h1>
+      <p>Access notes, past papers, and slides</p>
+    </div>
+
+    <!-- SEARCH ROW -->
+    <div class="search-row">
+      <div class="search-bar">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="mat-search" placeholder="Search materials..." />
+      </div>
+      <select class="filter-select" id="mat-filter">
+        <option value="">All Types</option>
+        <option value="Notes">Notes</option>
+        <option value="Past Paper">Past Paper</option>
+        <option value="Slides">Slides</option>
+        <option value="Reference">Reference Guide</option>
+      </select>
+    </div>
+
+    <!-- ===== SOFTWARE ENGINEERING ===== -->
+    <div class="class-section" data-class="software-engineering">
+      <div class="class-section-header">
+        <div class="class-dot dot-se"></div>
+        <span class="class-name">Software Engineering</span>
+        <span class="class-count">3 materials</span>
+      </div>
+      <div class="materials-grid">
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-se">📗</div>
+            <span class="tag tag-se">Reference Guide</span>
+          </div>
+          <h3>UML Diagrams Reference Guide</h3>
+          <div class="material-meta">
+            <span>Prof. James Dlamini</span>
+            <span>·</span>
+            <span>about 13 hours ago</span>
+          </div>
+          <p class="material-desc">Quick reference for all UML diagram types including use case, class, sequence, and activity diagrams.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-se">📘</div>
+            <span class="tag tag-se">Notes</span>
+          </div>
+          <h3>Software Engineering Fundamentals - Notes</h3>
+          <div class="material-meta">
+            <span>Prof. James Dlamini</span>
+            <span>·</span>
+            <span>about 13 hours ago</span>
+          </div>
+          <p class="material-desc">Detailed notes on SDLC models, requirements engineering, and software design patterns.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-se">📊</div>
+            <span class="tag tag-se">Slides</span>
+          </div>
+          <h3>Agile vs Waterfall Methodology - Slides</h3>
+          <div class="material-meta">
+            <span>Prof. James Dlamini</span>
+            <span>·</span>
+            <span>1 day ago</span>
+          </div>
+          <p class="material-desc">Lecture slides comparing Agile and Waterfall methodologies with real-world project examples.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== HUMAN-COMPUTER INTERACTION ===== -->
+    <div class="class-section" data-class="hci">
+      <div class="class-section-header">
+        <div class="class-dot dot-hci"></div>
+        <span class="class-name">Human-Computer Interaction</span>
+        <span class="class-count">3 materials</span>
+      </div>
+      <div class="materials-grid">
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-hci">📄</div>
+            <span class="tag tag-hci">Past Paper</span>
+          </div>
+          <h3>HCIN6222 Past Exam Paper 2023</h3>
+          <div class="material-meta">
+            <span>Dr. Sarah Mokoena</span>
+            <span>·</span>
+            <span>about 13 hours ago</span>
+          </div>
+          <p class="material-desc">Full past exam paper from 2023 with model answers to help prepare for assessments.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-hci">🖥️</div>
+            <span class="tag tag-hci">Slides</span>
+          </div>
+          <h3>Usability Evaluation Methods - Slides</h3>
+          <div class="material-meta">
+            <span>Dr. Sarah Mokoena</span>
+            <span>·</span>
+            <span>about 13 hours ago</span>
+          </div>
+          <p class="material-desc">Presentation slides covering heuristic evaluation, cognitive walkthroughs, and usability testing.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-hci">📘</div>
+            <span class="tag tag-hci">Notes</span>
+          </div>
+          <h3>HCIN6222 Lecture Notes - Week 1: Introduction to HCI</h3>
+          <div class="material-meta">
+            <span>Dr. Sarah Mokoena</span>
+            <span>·</span>
+            <span>13 minutes ago</span>
+          </div>
+          <p class="material-desc">Comprehensive notes covering the basics of Human-Computer Interaction and design principles.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== MATHEMATICS ===== -->
+    <div class="class-section" data-class="mathematics">
+      <div class="class-section-header">
+        <div class="class-dot dot-math"></div>
+        <span class="class-name">Mathematics</span>
+        <span class="class-count">2 materials</span>
+      </div>
+      <div class="materials-grid">
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-math">📐</div>
+            <span class="tag tag-math">Notes</span>
+          </div>
+          <h3>Linear Programming - Complete Notes</h3>
+          <div class="material-meta">
+            <span>Mr. Sipho Nkosi</span>
+            <span>·</span>
+            <span>2 days ago</span>
+          </div>
+          <p class="material-desc">Comprehensive notes on graphical and simplex methods for solving linear programming problems.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-math">📄</div>
+            <span class="tag tag-math">Past Paper</span>
+          </div>
+          <h3>Mathematics Past Paper 2022 - Semester 1</h3>
+          <div class="material-meta">
+            <span>Mr. Sipho Nkosi</span>
+            <span>·</span>
+            <span>3 days ago</span>
+          </div>
+          <p class="material-desc">Full past exam paper with worked solutions covering calculus, algebra, and statistics.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== COMPUTER SCIENCE ===== -->
+    <div class="class-section" data-class="computer-science">
+      <div class="class-section-header">
+        <div class="class-dot dot-cs"></div>
+        <span class="class-name">Computer Science</span>
+        <span class="class-count">2 materials</span>
+      </div>
+      <div class="materials-grid">
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-cs">💻</div>
+            <span class="tag tag-cs">Notes</span>
+          </div>
+          <h3>Data Structures & Algorithms - Summary Notes</h3>
+          <div class="material-meta">
+            <span>Prof. Zanele Dube</span>
+            <span>·</span>
+            <span>1 day ago</span>
+          </div>
+          <p class="material-desc">Concise notes on arrays, linked lists, stacks, queues, trees, and sorting algorithms.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+        <div class="material-card" data-searchable>
+          <div class="material-card-top">
+            <div class="material-icon material-icon-cs">📊</div>
+            <span class="tag tag-cs">Slides</span>
+          </div>
+          <h3>Object-Oriented Programming Concepts - Slides</h3>
+          <div class="material-meta">
+            <span>Prof. Zanele Dube</span>
+            <span>·</span>
+            <span>2 days ago</span>
+          </div>
+          <p class="material-desc">Lecture slides on classes, objects, inheritance, polymorphism, and encapsulation in Java.</p>
+          <button class="btn-view">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            View Details
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('mat-search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  document.querySelectorAll('.material-card').forEach(card => {
+    card.style.display = card.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+
+document.getElementById('mat-filter').addEventListener('change', function() {
+  const val = this.value;
+  document.querySelectorAll('.material-card').forEach(card => {
+    card.style.display = (!val || card.textContent.includes(val)) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>

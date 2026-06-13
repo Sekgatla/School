@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discussions — Lounge.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">📖</span>
+      <span class="logo-text">Lounge.</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item" data-page="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+      <a href="qa-forum.html" class="nav-item" data-page="qa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        Q&amp;A Forum
+      </a>
+      <a href="materials.html" class="nav-item" data-page="materials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Materials
+      </a>
+      <a href="tutorials.html" class="nav-item" data-page="tutorials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        Tutorials
+      </a>
+      <a href="discussions.html" class="nav-item active" data-page="discussions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Discussions
+      </a>
+      <a href="messages.html" class="nav-item" data-page="messages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Messages
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="avatar">S</div>
+        <div class="user-details">
+          <div class="name">Student</div>
+          <div class="role">Student</div>
+        </div>
+      </div>
+      <a href="index.html" class="sign-out">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="forum-header-row">
+      <div class="page-header" style="margin-bottom:0;">
+        <h1>Discussions</h1>
+        <p>General chat, study groups, and open topics</p>
+      </div>
+      <button class="btn btn-secondary" onclick="openModal('topic-modal')">+ Start Topic</button>
+    </div>
+
+    <div class="search-bar">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="disc-search" placeholder="Search discussions..." />
+    </div>
+
+    <!-- ===== HUMAN-COMPUTER INTERACTION DISCUSSIONS ===== -->
+    <div class="class-section">
+      <div class="class-section-header">
+        <div class="class-dot dot-hci"></div>
+        <span class="class-name">Human-Computer Interaction</span>
+        <span class="class-count">2 topics</span>
+      </div>
+
+      <div class="discussion-card" data-searchable>
+        <div class="replies-box">
+          <div class="count">0</div>
+          <div class="label">REPLIES</div>
+        </div>
+        <div class="discussion-content">
+          <div class="discussion-top">
+            <h3>Tips for the POE assignment - Part 2</h3>
+            <span class="tag tag-hci">Human-Computer Interaction</span>
+          </div>
+          <p class="disc-body">Does anyone have tips for approaching Part 2 of the POE? I want to make sure my website properly reflects the usability...</p>
+          <div class="discussion-meta">
+            <span class="author">TS Thabo Sithole</span> · Started 13 minutes ago
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-card" data-searchable>
+        <div class="replies-box">
+          <div class="count">2</div>
+          <div class="label">REPLIES</div>
+        </div>
+        <div class="discussion-content">
+          <div class="discussion-top">
+            <h3>Study group for HCIN6222 mid-semester test</h3>
+            <span class="tag tag-hci">Human-Computer Interaction</span>
+          </div>
+          <p class="disc-body">I'm looking for people to form a study group for the upcoming mid-semester test. We could meet on campus or use this...</p>
+          <div class="discussion-meta">
+            <span class="author">MT Manubi Thanyani</span> · Started 13 minutes ago
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SOFTWARE ENGINEERING DISCUSSIONS ===== -->
+    <div class="class-section">
+      <div class="class-section-header">
+        <div class="class-dot dot-se"></div>
+        <span class="class-name">Software Engineering</span>
+        <span class="class-count">2 topics</span>
+      </div>
+
+      <div class="discussion-card" data-searchable>
+        <div class="replies-box">
+          <div class="count">1</div>
+          <div class="label">REPLIES</div>
+        </div>
+        <div class="discussion-content">
+          <div class="discussion-top">
+            <h3>Best resources for learning UML diagrams?</h3>
+            <span class="tag tag-se">Software Engineering</span>
+          </div>
+          <p class="disc-body">I'm finding UML diagrams really difficult to understand from the textbook alone. Has anyone found good YouTube videos...</p>
+          <div class="discussion-meta">
+            <span class="author">LK Lesedi Khumalo</span> · Started 13 minutes ago
+          </div>
+        </div>
+      </div>
+
+      <div class="discussion-card" data-searchable>
+        <div class="replies-box">
+          <div class="count">4</div>
+          <div class="label">REPLIES</div>
+        </div>
+        <div class="discussion-content">
+          <div class="discussion-top">
+            <h3>Which IDE is best for the project assignment?</h3>
+            <span class="tag tag-se">Software Engineering</span>
+          </div>
+          <p class="disc-body">Our group is debating between IntelliJ IDEA and Eclipse. Which one do you recommend for the semester project?</p>
+          <div class="discussion-meta">
+            <span class="author">NK Nomsa Khumalo</span> · Started 2 hours ago
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MATHEMATICS DISCUSSIONS ===== -->
+    <div class="class-section">
+      <div class="class-section-header">
+        <div class="class-dot dot-math"></div>
+        <span class="class-name">Mathematics</span>
+        <span class="class-count">1 topic</span>
+      </div>
+
+      <div class="discussion-card" data-searchable>
+        <div class="replies-box">
+          <div class="count">3</div>
+          <div class="label">REPLIES</div>
+        </div>
+        <div class="discussion-content">
+          <div class="discussion-top">
+            <h3>Exam prep strategy — what are you focusing on?</h3>
+            <span class="tag tag-math">Mathematics</span>
+          </div>
+          <p class="disc-body">The exam is coming up fast. What topics are you prioritising? I'm struggling with integration and could use some advice...</p>
+          <div class="discussion-meta">
+            <span class="author">SD Sifiso Dlamini</span> · Started 5 hours ago
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- START TOPIC MODAL -->
+<div class="modal-overlay" id="topic-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Start a Topic</h2>
+      <button class="modal-close" onclick="closeModal('topic-modal')">×</button>
+    </div>
+    <p class="modal-subtitle">Start a discussion thread with your classmates.</p>
+    <div class="form-group">
+      <label>Topic Title</label>
+      <input type="text" placeholder="What would you like to discuss?" id="topic-title" />
+    </div>
+    <div class="form-group">
+      <label>Subject</label>
+      <select>
+        <option>Software Engineering</option>
+        <option>Human-Computer Interaction</option>
+        <option>Mathematics</option>
+        <option>Computer Science</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Share your thoughts..."></textarea>
+    </div>
+    <button class="btn btn-primary" style="width:100%;" onclick="submitTopic()">Post Topic</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <div class="toast-icon">✓</div>
+  <div>
+    <div class="toast-title">Topic posted successfully</div>
+    <div class="toast-body">Your discussion topic has been published.</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+function submitTopic() {
+  closeModal('topic-modal');
+  showToast('Topic posted successfully', 'Your discussion topic has been published.');
+}
+
+document.getElementById('disc-search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  document.querySelectorAll('.discussion-card').forEach(card => {
+    card.style.display = card.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>

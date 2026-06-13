@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messages — Lounge.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">📖</span>
+      <span class="logo-text">Lounge.</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item" data-page="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+      <a href="qa-forum.html" class="nav-item" data-page="qa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        Q&amp;A Forum
+      </a>
+      <a href="materials.html" class="nav-item" data-page="materials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Materials
+      </a>
+      <a href="tutorials.html" class="nav-item" data-page="tutorials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        Tutorials
+      </a>
+      <a href="discussions.html" class="nav-item" data-page="discussions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Discussions
+      </a>
+      <a href="messages.html" class="nav-item active" data-page="messages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Messages
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="avatar">S</div>
+        <div class="user-details">
+          <div class="name">Student</div>
+          <div class="role">Student</div>
+        </div>
+      </div>
+      <a href="index.html" class="sign-out">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Messages</h1>
+      <p>Direct messages with lecturers and classmates</p>
+    </div>
+
+    <div class="messages-layout">
+
+      <!-- CONVERSATIONS PANEL -->
+      <div class="conversations-panel">
+        <div class="conversations-header">
+          <h3>Messages</h3>
+          <button class="new-btn" title="New message">+</button>
+        </div>
+
+        <div class="conversation-item">
+          <div class="conv-avatar" style="background:#c4d4e8;"></div>
+          <div class="conv-info">
+            <div class="conv-name">Prof. James Dlamini</div>
+            <div class="conv-preview">Thank you for your question...</div>
+          </div>
+        </div>
+
+        <div class="conversation-item">
+          <div class="conv-avatar" style="background:#e8d8c4;"></div>
+          <div class="conv-info">
+            <div class="conv-name">Dr. Sarah Mokoena</div>
+            <div class="conv-preview">The POE deadline is next Friday</div>
+          </div>
+        </div>
+
+        <div class="conversation-item">
+          <div class="conv-avatar" style="background:#d4e6da;"></div>
+          <div class="conv-info">
+            <div class="conv-name">Thabo Sithole</div>
+            <div class="conv-preview">Are you joining the study group?</div>
+          </div>
+        </div>
+
+        <div class="conversation-item">
+          <div class="conv-avatar" style="background:#d8c4e8;"></div>
+          <div class="conv-info">
+            <div class="conv-name">Lesedi Khumalo</div>
+            <div class="conv-preview">I found a great resource for UML...</div>
+          </div>
+        </div>
+
+        <div class="conversation-item">
+          <div class="conv-avatar" style="background:#fde8e0;"></div>
+          <div class="conv-info">
+            <div class="conv-name">Manubi Thanyani</div>
+            <div class="conv-preview">What time works for you?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAT PANEL -->
+      <div class="chat-panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div class="empty-title">Your Messages</div>
+        <div class="empty-sub">Select a conversation or start a new one</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Tutorials — Lounge.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">📖</span>
+      <span class="logo-text">Lounge.</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item" data-page="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+      <a href="qa-forum.html" class="nav-item" data-page="qa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+        Q&amp;A Forum
+      </a>
+      <a href="materials.html" class="nav-item" data-page="materials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Materials
+      </a>
+      <a href="tutorials.html" class="nav-item active" data-page="tutorials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        Tutorials
+      </a>
+      <a href="discussions.html" class="nav-item" data-page="discussions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Discussions
+      </a>
+      <a href="messages.html" class="nav-item" data-page="messages">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Messages
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="user-info">
+        <div class="avatar">S</div>
+        <div class="user-details">
+          <div class="name">Student</div>
+          <div class="role">Student</div>
+        </div>
+      </div>
+      <a href="index.html" class="sign-out">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Video Tutorials</h1>
+      <p>Watch recorded lessons and explanations</p>
+    </div>
+
+    <div class="search-bar">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="tut-search" placeholder="Search tutorials by title or subject..." />
+    </div>
+
+    <!-- ===== SOFTWARE ENGINEERING TUTORIALS ===== -->
+    <div class="class-section">
+      <div class="class-section-header">
+        <div class="class-dot dot-se"></div>
+        <span class="class-name">Software Engineering</span>
+        <span class="class-count">2 videos</span>
+      </div>
+      <div class="tutorials-grid">
+
+        <div class="tutorial-card" data-searchable>
+          <div class="tutorial-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <div class="tutorial-body">
+            <span class="tag tag-se" style="margin-bottom:8px;display:inline-block;">Software Engineering</span>
+            <h3>Writing User Stories in Agile Development</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-top:6px;line-height:1.5;">Learn how to write effective user stories that capture requirements and communicate clearly with development teams.</p>
+            <div class="tutorial-meta">
+              <span>Prof. James Dlamini</span>
+              <span>13 minutes ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutorial-card" data-searchable>
+          <div class="tutorial-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <div class="tutorial-body">
+            <span class="tag tag-se" style="margin-bottom:8px;display:inline-block;">Software Engineering</span>
+            <h3>Drawing UML Class Diagrams — Step by Step</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-top:6px;line-height:1.5;">A complete walkthrough of drawing UML class diagrams including relationships, multiplicity, and best practices.</p>
+            <div class="tutorial-meta">
+              <span>Prof. James Dlamini</span>
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== HCI TUTORIALS ===== -->
+    <div class="class-section">
+      <div class="class-section-header">
+        <div class="class-dot dot-hci"></div>
+        <span class="class-name">Human-Computer Interaction</span>
+        <span class="class-count">2 videos</span>
+      </div>
+      <div class="tutorials-grid">
+
+        <div class="tutorial-card" data-searchable>
+          <div class="tutorial-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <div class="tutorial-body">
+            <span class="tag tag-hci" style="margin-bottom:8px;display:inline-block;">Human-Computer Interaction</span>
+            <h3>How to Conduct a Heuristic Evaluation</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-top:6px;line-height:1.5;">Step-by-step guide to evaluating a system's usability using Nielsen's 10 heuristics with practical examples.</p>
+            <div class="tutorial-meta">
+              <span>Dr. Sarah Mokoena</span>
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutorial-card" data-searchable>
+          <div class="tutorial-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <div class="tutorial-body">
+            <span class="tag tag-hci" style="margin-bottom:8px;display:inline-block;">Human-Computer Interaction</span>
+            <h3>Prototyping with Figma — Beginner's Guide</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-top:6px;line-height:1.5;">Create interactive wireframes and prototypes in Figma for your HCI assignments and POE projects.</p>
+            <div class="tutorial-meta">
+              <span>Dr. Sarah Mokoena</span>
+              <span>2 days ago</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== COMPUTER SCIENCE TUTORIALS ===== -->
+    <div class="class-section">
+      <div class="class-section-header">
+        <div class="class-dot dot-cs"></div>
+        <span class="class-name">Computer Science</span>
+        <span class="class-count">1 video</span>
+      </div>
+      <div class="tutorials-grid">
+
+        <div class="tutorial-card" data-searchable>
+          <div class="tutorial-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <div class="tutorial-body">
+            <span class="tag tag-cs" style="margin-bottom:8px;display:inline-block;">Computer Science</span>
+            <h3>Understanding Recursion with Real Examples</h3>
+            <p style="font-size:13px;color:var(--text-muted);margin-top:6px;line-height:1.5;">Clear explanation of recursive functions using factorial, Fibonacci, and tree traversal examples in Java.</p>
+            <div class="tutorial-meta">
+              <span>Prof. Zanele Dube</span>
+              <span>3 days ago</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('tut-search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  document.querySelectorAll('.tutorial-card').forEach(card => {
+    card.style.display = card.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+</script>
+</body>
+</html>
